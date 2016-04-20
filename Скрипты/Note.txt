@@ -1,0 +1,10 @@
+CREATE TABLE [dbo].[Note] (
+    [Id]      INT           NOT NULL,
+    [CurPair] NVARCHAR (50) NOT NULL,
+    [Lot]     INT           NOT NULL,
+    [Result]  MONEY         NULL,
+    [Start]   DATETIME      NOT NULL,
+    [End]     DATETIME      NULL,
+    PRIMARY KEY CLUSTERED ([Id] ASC)
+);
+

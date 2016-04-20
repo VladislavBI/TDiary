@@ -1,0 +1,7 @@
+CREATE TABLE [dbo].[Person] (
+    [Id]       INT            NOT NULL,
+    [Name]     NVARCHAR (100) NOT NULL,
+    [Password] VARBINARY (50) NOT NULL,
+    PRIMARY KEY CLUSTERED ([Id] ASC)
+);
+

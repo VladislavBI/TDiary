@@ -1,0 +1,9 @@
+CREATE TABLE [dbo].[PersonToNote] (
+    [Id]       INT NOT NULL,
+    [PersonId] INT NOT NULL,
+    [NoteId]   INT NOT NULL,
+    PRIMARY KEY CLUSTERED ([Id] ASC),
+    CONSTRAINT [FK_PersonToNote_ToPerson] FOREIGN KEY ([PersonId]) REFERENCES [dbo].[Person] ([Id]),
+    CONSTRAINT [FK_PersonToNote_ToNote] FOREIGN KEY ([NoteId]) REFERENCES [dbo].[Note] ([Id])
+);
+
